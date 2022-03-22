@@ -1,4 +1,4 @@
-{
+wordsFromDict = {
     "dol": "dolomite",
     "off": "off",
     "wh": "white",

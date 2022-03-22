@@ -1,9 +1,5 @@
 import re
-import json
-
-wordsFromDict = {}
-with open('Dict.py') as file:
-    wordsFromDict = json.load(file)
+from Dict import wordsFromDict
 
 matchedWords = {}
 misMatchedWords = []
@@ -18,7 +14,7 @@ def splitText(str, words):
     print(str)
     # split string
     splits = str.split()
-    
+
     # for loop to iterate over words array
     for split in splits:
         lowerSplit = split.lower()

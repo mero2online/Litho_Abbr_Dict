@@ -4,6 +4,10 @@ from tkinter import scrolledtext
 
 from Func import convertText
 
+""" 
+DOL: Wh, off wh, gy, sft, mod-hd, i/p.
+DOLOMITE: White, off white, grey, soft, moderately hard, in part.
+"""
 
 def convertFromAbbr():
     text = txtBoxInput.get('1.0', END)
