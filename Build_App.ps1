@@ -1,0 +1,1 @@
+pyinstaller Litho_Abbr_Dict.py --onefile --windowed -i "abbr.ico" --splash "abbr.png"
