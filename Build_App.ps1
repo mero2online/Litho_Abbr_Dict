@@ -1,1 +1,1 @@
-pyinstaller Litho_Abbr_Dict.py --onefile --windowed -i "abbr.ico" --splash "abbr.png"
+pyinstaller Litho_Abbr_Dict.py --onefile --windowed --add-data 'src;src' -i ".\src\abbr.ico" --splash ".\src\abbr.png"

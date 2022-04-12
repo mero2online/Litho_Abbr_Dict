@@ -3,6 +3,7 @@ from tkinter import messagebox
 from tkinter import scrolledtext
 
 from Func import convertText
+from HelperFunc import resource_path
 
 try:
     import pyi_splash  # type: ignore
@@ -67,6 +68,6 @@ root.geometry('700x610')
 root.configure(bg='#000')
 root.resizable(False, False)
 # Setting icon of master window
-root.iconbitmap('abbr.ico')
+root.iconbitmap(resource_path('abbr.ico'))
 # Start program
 root.mainloop()

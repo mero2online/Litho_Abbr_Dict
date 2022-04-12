@@ -4,6 +4,7 @@ PyInstaller.__main__.run([
     'Litho_Abbr_Dict.py',
     '--onefile',
     '--windowed',
-    '-i', "abbr.ico",
-    '--splash', "abbr.png",
+    '--add-data', 'src;src',
+    '-i', ".\src\\abbr.ico",
+    '--splash', ".\src\\abbr.png",
 ])
