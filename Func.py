@@ -32,12 +32,12 @@ def replaceWords(words, text):
 
     keys = words.keys()
     for i in keys:
-        text = text.replace(i, words[i])
-        text = text.replace('-', ' ')
+        text = re.sub(rf'\b{i}\b', words[i], text)
+        text = text.replace('-', ' to ')
 
-    text = text.replace('_', ' ')
+    finalText = text.replace('_', ' ')
     matchedWords.clear()
-    return text
+    return finalText
 
 
 def convertText(text, dicToUse):
@@ -46,6 +46,6 @@ def convertText(text, dicToUse):
     splitText(text, wordsDic)
     if len(misMatchedWords) > 0:
         return misMatchedWords
-    text = replaceWords(matchedWords, text)
-    print(text)
-    return text
+    finalText = replaceWords(matchedWords, text)
+    print(finalText)
+    return finalText
