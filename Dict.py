@@ -21,7 +21,6 @@ wordsFromDict = {
     "dk": "dark",
     "dol": "dolomite",
     "dolic": "dolomitic",
-    "dol lst": "dolomitic limest",
     "f": "fine",
     "frm": "firm",
     "fiss": "fissile",
@@ -37,7 +36,6 @@ wordsFromDict = {
     "grs": "grains",
     "hd": "hard",
     "hily": "highly",
-    "i/p": "in_parts",
     "ind": "indurated",
     "kao": "kaolinite",
     "kaoic": "kaoliniteic",
@@ -97,7 +95,15 @@ wordsFromDict = {
     "wshble": "washable",
     "w": "well",
     "wh": "white",
-    "w/": "with",
     "yel": "yellow",
     "yelsh": "yellowish",
+    "i/p": "in_parts",
+    "dash": "to",  # "-"
+    "w_": "with",  # "/"
+}
+
+specialWordsFromDict = {
+    "in_part": "in part",
+    "-": " dash ",
+    "w/": "w_"
 }
