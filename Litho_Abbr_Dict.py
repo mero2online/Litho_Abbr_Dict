@@ -43,25 +43,25 @@ def addText(txt):
 root = Tk()
 
 Button(root, text="Convert From Abbr", background='#e00707',
-       command=convertFromAbbr).grid(row=0, column=0, pady=5)
+       command=convertFromAbbr).place(x=150, y=15)
 
 Button(root, text="Convert To Abbr", background='#e00707',
-       command=convertToAbbr).grid(row=0, column=1, pady=5)
+       command=convertToAbbr).place(x=450, y=15)
 
 
 group1 = LabelFrame(root, text="Text Input", padx=5, pady=5)
-group1.grid(row=2, column=0, columnspan=2, padx=10, pady=10, sticky=E+W+N+S)
+group1.place(x=20, y=55, width=660, height=20)
 
 # Create the textbox
-txtBoxInput = scrolledtext.ScrolledText(group1, width=80, height=15)
-txtBoxInput.grid(row=1, column=0, columnspan=2, sticky=E+W+N+S)
+txtBoxInput = scrolledtext.ScrolledText(root, width=80, height=15)
+txtBoxInput.place(x=20, y=75)
 
 group2 = LabelFrame(root, text="Text Output", padx=5, pady=5)
-group2.grid(row=3, column=0, columnspan=2, padx=10, pady=10, sticky=E+W+N+S)
+group2.place(x=20, y=330, width=660, height=20)
 
 # Create the textbox
-txtBoxOutput = scrolledtext.ScrolledText(group2, width=80, height=15)
-txtBoxOutput.grid(row=1, column=0, columnspan=2, sticky=E+W+N+S)
+txtBoxOutput = scrolledtext.ScrolledText(root, width=80, height=15)
+txtBoxOutput.place(x=20, y=350)
 
 root.title('Litho_Abbr_Dict')
 root.geometry('700x610')
