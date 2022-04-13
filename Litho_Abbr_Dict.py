@@ -42,10 +42,10 @@ def addText(txt):
 
 root = Tk()
 
-Button(root, text="Convert From Abbr", background='#e00707',
+Button(root, text="From Abbr To Words", background='#e00707',
        command=convertFromAbbr).place(x=150, y=15)
 
-Button(root, text="Convert To Abbr", background='#e00707',
+Button(root, text="From Words To Abbr", background='#e00707',
        command=convertToAbbr).place(x=450, y=15)
 
 
