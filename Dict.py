@@ -15,6 +15,7 @@ wordsFromDict = {
     "clss": "colorless",
     "cmpct": "compact",
     "cmpctd": "compacted",
+    "consld": "consolidated",
     "crmy": "creamy",
     "crpxln": "cryptocrystalline",
     "cut": "cut",
@@ -67,6 +68,7 @@ wordsFromDict = {
     "resdl": "residual",
     "rng": "ring",
     "rnd": "rounded",
+    "s": "shows",
     "snd": "sand",
     "sst": "sandstone",
     "sh": "shale",
@@ -98,12 +100,15 @@ wordsFromDict = {
     "yel": "yellow",
     "yelsh": "yellowish",
     "i/p": "in_parts",
+    "n/s": "no_shows",
     "dash": "to",  # "-"
     "w_": "with",  # "/"
 }
 
 specialWordsFromDict = {
     "in_part": "in part",
+    "no_shows": "no shows",
+    "NO_SHOWS": "NO SHOWS",
     "-": " dash ",
     "w/": "w_"
 }
