@@ -35,6 +35,7 @@ def replaceWords(words=dict, text=str, specialWordsDic=dict):
 
     finalText = replace_all(text, specialWordsDic)
     matchedWords.clear()
+    finalText = " ".join(finalText.split())
     return finalText
 
 
