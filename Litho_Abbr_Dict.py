@@ -42,29 +42,33 @@ def addText(txt):
 
 root = Tk()
 
-Button(root, text="From Abbr To Words", background='#e00707',
+Button(root, text="From Abbr To Words", background='orange',
        command=convertFromAbbr).place(x=150, y=15)
 
-Button(root, text="From Words To Abbr", background='#e00707',
+Button(root, text="From Words To Abbr", background='orange',
        command=convertToAbbr).place(x=450, y=15)
 
 
-group1 = LabelFrame(root, text="Text Input", padx=5, pady=5)
+group1 = LabelFrame(root, text="Text Input", padx=5,
+                    pady=5, background='orange')
 group1.place(x=20, y=55, width=660, height=20)
 
 # Create the textbox
-txtBoxInput = scrolledtext.ScrolledText(root, width=80, height=15)
+txtBoxInput = scrolledtext.ScrolledText(
+    root, width=80, height=15, background='orange')
 txtBoxInput.place(x=20, y=75)
 
-group2 = LabelFrame(root, text="Text Output", padx=5, pady=5)
+group2 = LabelFrame(root, text="Text Output", padx=5,
+                    pady=5, background='orange')
 group2.place(x=20, y=330, width=660, height=20)
 
 # Create the textbox
-txtBoxOutput = scrolledtext.ScrolledText(root, width=80, height=15)
+txtBoxOutput = scrolledtext.ScrolledText(
+    root, width=80, height=15, background='orange')
 txtBoxOutput.place(x=20, y=350)
 
 madeWithLoveBy = Label(
-    root, text='Made with ❤ by Mohamed Omar', background='#10b6a8', foreground='#000000',
+    root, text='Made with ❤ by Mohamed Omar', background='orange', foreground='#000000',
     font=('monospace', 9, 'bold'))
 madeWithLoveBy.place(x=490, y=595, width=190, height=20)
 
