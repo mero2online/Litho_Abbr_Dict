@@ -63,8 +63,13 @@ group2.place(x=20, y=330, width=660, height=20)
 txtBoxOutput = scrolledtext.ScrolledText(root, width=80, height=15)
 txtBoxOutput.place(x=20, y=350)
 
+madeWithLoveBy = Label(
+    root, text='Made with ❤ by Mohamed Omar', background='#10b6a8', foreground='#000000',
+    font=('monospace', 9, 'bold'))
+madeWithLoveBy.place(x=490, y=595, width=190, height=20)
+
 root.title('Litho_Abbr_Dict')
-root.geometry('700x610')
+root.geometry('700x615')
 root.configure(bg='#000')
 root.resizable(False, False)
 # Setting icon of master window
