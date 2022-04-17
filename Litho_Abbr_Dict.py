@@ -44,10 +44,10 @@ def addText(txt):
 
 root = Tk()
 
-Button(root, text="From Abbr To Words", background='orange',
+Button(root, text="From Abbr To Words", background='#ff6f00',
        command=convertFromAbbr).place(x=150, y=15)
 
-Button(root, text="From Words To Abbr", background='orange',
+Button(root, text="From Words To Abbr", background='#ff6f00',
        command=convertToAbbr).place(x=450, y=15)
 
 
@@ -57,7 +57,7 @@ group1.place(x=20, y=55, width=660, height=20)
 
 # Create the textbox
 txtBoxInput = scrolledtext.ScrolledText(
-    root, width=80, height=15, background='orange')
+    root, width=80, height=15, background='#ffc800')
 txtBoxInput.place(x=20, y=75)
 
 group2 = LabelFrame(root, text="Text Output", padx=5,
@@ -66,7 +66,7 @@ group2.place(x=20, y=330, width=660, height=20)
 
 # Create the textbox
 txtBoxOutput = scrolledtext.ScrolledText(
-    root, width=80, height=15, background='orange')
+    root, width=80, height=15, background='#ffc800')
 txtBoxOutput.place(x=20, y=350)
 txtBoxOutput.config(state='disabled')
 
