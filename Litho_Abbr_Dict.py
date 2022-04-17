@@ -36,8 +36,10 @@ def convertToAbbr():
 
 
 def addText(txt):
+    txtBoxOutput.config(state='normal')
     txtBoxOutput.delete('1.0', END)
     txtBoxOutput.insert(INSERT, txt)
+    txtBoxOutput.config(state='disabled')
 
 
 root = Tk()
@@ -66,6 +68,7 @@ group2.place(x=20, y=330, width=660, height=20)
 txtBoxOutput = scrolledtext.ScrolledText(
     root, width=80, height=15, background='orange')
 txtBoxOutput.place(x=20, y=350)
+txtBoxOutput.config(state='disabled')
 
 madeWithLoveBy = Label(
     root, text='Made with ❤ by Mohamed Omar', background='orange', foreground='#000000',
