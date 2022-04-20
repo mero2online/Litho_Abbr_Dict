@@ -97,6 +97,7 @@ wordsFromDict = {
     "wshble": "washable",
     "w": "well",
     "wh": "white",
+    "xln": "crystalline",
     "yel": "yellow",
     "yelsh": "yellowish",
     "i/p": "in_parts",
