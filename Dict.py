@@ -102,6 +102,8 @@ wordsFromDict = {
     "yelsh": "yellowish",
     "i/p": "in_parts",
     "n/s": "no_shows",
+    "dolst": "dolomitic limestone",
+    "DOLST": "dolomitic_limestone",
     "dash": "to",  # "-"
     "w_": "with",  # "/"
 }
@@ -110,6 +112,7 @@ specialWordsFromDict = {
     "in_part": "in part",
     "no_shows": "no shows",
     "NO_SHOWS": "NO SHOWS",
+    "dolomitic_limestone": "DOLOMITIC LIMESTONE",
     "-": " dash ",
     "w/": "w_"
 }
