@@ -102,6 +102,7 @@ group1.place(x=20, y=55, width=660, height=20)
 txtBoxInput = scrolledtext.ScrolledText(
     root, width=80, height=15, background='#ffc800')
 txtBoxInput.place(x=20, y=75)
+txtBoxInput.config(wrap=WORD)
 
 group2 = LabelFrame(root, text="Text Output", padx=5,
                     pady=5, background='orange')
@@ -111,7 +112,7 @@ group2.place(x=20, y=330, width=660, height=20)
 txtBoxOutput = scrolledtext.ScrolledText(
     root, width=80, height=15, background='#ffc800')
 txtBoxOutput.place(x=20, y=350)
-txtBoxOutput.config(state='disabled')
+txtBoxOutput.config(state='disabled', wrap=WORD)
 
 madeWithLoveBy = Label(
     root, text='Made with ❤ by Mohamed Omar', background='orange', foreground='#000000',
